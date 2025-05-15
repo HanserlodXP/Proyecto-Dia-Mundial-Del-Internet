@@ -100,4 +100,40 @@ section.blog {
     margin-bottom: 1.5rem;
 }
 
-.blog-post h3 
+.blog-post h3 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  color: #005a9c;
+}
+
+.blog-post ul {
+  margin: 1rem 0 1.5rem 1.5rem;
+  padding-left: 1rem;
+}
+
+.blog-post ul li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  list-style-type: "🔹 ";
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  .blog .container {
+    padding: 1.5rem;
+  }
+
+  .blog-post h2 {
+    font-size: 1.6rem;
+  }
+
+  .blog-post h3 {
+    font-size: 1.2rem;
+  }
+
+  .blog-post p,
+  .blog-post ul li {
+    font-size: 1rem;
+  }
+}
