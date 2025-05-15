@@ -40,3 +40,11 @@ header nav a:hover {
     background-color: #ffffff22;
     color: #00c3ff;
 }
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  } 
+}
