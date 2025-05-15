@@ -60,3 +60,12 @@ header nav a:hover {
     }
 
 }
+
+
+
+/* Section Blog */
+
+section.blog {
+    background-color: #f9f9f9;
+    padding: 4rem 1rem ;
+}
