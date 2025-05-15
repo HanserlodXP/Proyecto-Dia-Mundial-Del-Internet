@@ -3,7 +3,7 @@ header {
     color: #fff;
     padding: 1rem 2rem;
     position: sticky;
-    top: 1;
+    top: 0rem;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
