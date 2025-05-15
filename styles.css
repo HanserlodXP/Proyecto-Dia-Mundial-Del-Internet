@@ -94,5 +94,10 @@ section.blog {
 }
 
 .blog-post p {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 1.5rem;
 }
+
+.blog-post h3 
