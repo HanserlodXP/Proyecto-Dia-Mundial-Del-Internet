@@ -35,3 +35,8 @@ header nav a {
     transition: color 0.3s ease, bakground-color 0.3s ease;
     border-radius: 5px;
 }
+
+header nav a:hover {
+    background-color: #ffffff22;
+    color: #00c3ff;
+}
