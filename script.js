@@ -28,3 +28,4 @@
     // Ocultar el botón hasta que pasen los 2 segundos
     document.getElementById('authButton').style.display = 'none';
   });
+
