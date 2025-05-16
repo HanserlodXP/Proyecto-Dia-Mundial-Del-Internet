@@ -61,6 +61,63 @@ header nav a:hover {
 
 }
 
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #00c3ff, #0078d7);  
+  color: white;
+  padding: 6rem 1rem;
+  text-align: center;
+}
+
+
+.hero .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.hero h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.hero .cta {
+  background-color: #ffffff;
+  color: #0078d7;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hero .cta:hover {
+  background-color: #e0f4ff;
+  color: #005ea3;
+}
+
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .hero .cta {
+    font-size: 1rem;
+    padding: 0.65rem 1.2rem;
+  }
+}
 
 /* Section Blog */
 
@@ -137,63 +194,62 @@ section.blog {
   }
 }
 
-/* Hero Section */
-.hero {
-  background: linear-gradient(to right, #00c3ff, #0078d7);  
-  color: white;
-  padding: 6rem 1rem;
+/* Sección de eventos */
+.eventos {
+  background-color: #ffffff;
+  padding: 4rem 1rem;
   text-align: center;
 }
 
-
-.hero .container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-
-.hero h2 {
-  font-size: 2.8rem;
-  font-weight: 700;
+/* Título de la sección */
+.eventos h2 {
+  font-size: 2.2rem;
   margin-bottom: 1rem;
-  line-height: 1.3;
+  color: #1a1a1a;
 }
 
-.hero p {
+/* Intro */
+.eventos .intro {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2.5rem;
+}
+
+/* Grid de eventos */
+.eventos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Caja de evento */
+.evento {
+  background-color: #f5faff;
+  padding: 1.8rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.evento:hover {
+  transform: translateY(-5px);
+}
+
+/* Título del evento */
+.evento h3 {
   font-size: 1.3rem;
-  margin-bottom: 2rem;
-  line-height: 1.6;
-}
-
-.hero .cta {
-  background-color: #ffffff;
   color: #0078d7;
-  text-decoration: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: all 0.3s ease;
+  margin-bottom: 0.75rem;
 }
 
-.hero .cta:hover {
-  background-color: #e0f4ff;
-  color: #005ea3;
+/* Detalles del evento */
+.evento p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.4rem;
 }
 
-@media (max-width: 768px) {
-  .hero h2 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1.1rem;
-  }
-
-  .hero .cta {
-    font-size: 1rem;
-    padding: 0.65rem 1.2rem;
-  }
-}
 
 /* Footer  */
 footer {
