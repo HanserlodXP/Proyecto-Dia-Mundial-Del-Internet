@@ -1,4 +1,5 @@
-/* Pantalla de carga completa */
+/* Full screen loading overlay */
+/* Covers entire screen with light gray background and centers content */
 .preloader {
   position: fixed;
   top: 0;
@@ -9,27 +10,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 9999;
+  z-index: 9999; /* Ensures it stays on top of all elements */
 }
 
-/* Contenido centrado */
+/* Centered content inside the preloader */
+/* Text centered with sans-serif font */
 .preloader-content {
   text-align: center;
   font-family: sans-serif;
 }
 
+/* Style for preloader heading */
 .preloader-content h2 {
   font-size: 1.6rem;
   margin-bottom: 1rem;
   color: #333;
 }
 
+/* Style for preloader paragraph */
 .preloader-content p {
   color: #666;
   margin-bottom: 2rem;
 }
 
-/* Botón de autenticación */
+/* Authentication button styles */
+/* Basic design with colors, rounded corners and hover effect */
 #authButton {
   padding: 0.75rem 1.5rem;
   background-color: #0078d7;
@@ -45,36 +50,42 @@
   background-color: #005fa3;
 }
 
-
+/* Header styles */
+/* Dark background, white text, padding, sticky position */
 header {
     background-color: #1a1a1a;
     color: #fff;
     padding: 1rem 2rem;
     position: sticky;
     top: 0rem;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    z-index: 1000; /* Keeps header above other elements */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); /* Adds shadow for depth */
 }
 
+/* Container inside header for flex layout */
 header.container-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Space between title and nav */
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto; /* Center horizontally */
 }
 
+/* Main header title */
 header h1 {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0;
 }
 
+/* Header navigation layout */
 header nav {
     display: flex;
-    gap: 1rem;
+    gap: 1rem; /* Space between nav links */
 }
 
+/* Navigation links style */
+/* White text, no underline, padding, transition effects */
 header nav a {
     color: #fff;
     text-decoration: none;
@@ -84,12 +95,14 @@ header nav a {
     border-radius: 5px;
 }
 
+/* Hover effect for nav links */
 header nav a:hover {
-    background-color: #ffffff22;
-    color: #00c3ff;
+    background-color: #ffffff22; /* Semi-transparent background */
+    color: #00c3ff; /* Light blue */
 }
 
-/* Responsive para móviles */
+/* Responsive styles for screens smaller than 768px */
+/* Changes header and nav layout for mobile devices */
 @media (max-width: 768px) {
   header .container {
     flex-direction: column;
@@ -110,6 +123,7 @@ header nav a:hover {
 }
 
 /* Hero Section */
+/* Blue gradient background, white text, padding and centered text */
 .hero {
   background: linear-gradient(to right, #00c3ff, #0078d7);  
   color: white;
@@ -117,13 +131,13 @@ header nav a:hover {
   text-align: center;
 }
 
-
+/* Container inside hero to limit max width */
 .hero .container {
   max-width: 800px;
   margin: 0 auto;
 }
 
-
+/* Hero heading styles */
 .hero h2 {
   font-size: 2.8rem;
   font-weight: 700;
@@ -131,12 +145,15 @@ header nav a:hover {
   line-height: 1.3;
 }
 
+/* Hero paragraph styles */
 .hero p {
   font-size: 1.3rem;
   margin-bottom: 2rem;
   line-height: 1.6;
 }
 
+/* Call-to-action button inside hero */
+/* White background, blue text, rounded corners, transition */
 .hero .cta {
   background-color: #ffffff;
   color: #0078d7;
@@ -147,11 +164,13 @@ header nav a:hover {
   transition: all 0.3s ease;
 }
 
+/* Hover effect for call-to-action button */
 .hero .cta:hover {
   background-color: #e0f4ff;
   color: #005ea3;
 }
 
+/* Responsive styles for hero on mobile */
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 2rem;
@@ -167,13 +186,14 @@ header nav a:hover {
   }
 }
 
-/* Section Blog */
-
+/* Blog Section */
+/* Light gray background and generous padding */
 section.blog {
     background-color: #f9f9f9;
     padding: 4rem 1rem ;
 }
 
+/* Blog container with white background, shadow and rounded corners */
 .blog .container {
     max-width: 800px;
     margin: 0 auto;
@@ -183,6 +203,7 @@ section.blog {
     border-radius: 12px;
 }
 
+/* Blog post title styles */
 .blog-post h2{
     font-size: 2rem ;
     margin-bottom: 0.75rem;
@@ -190,6 +211,7 @@ section.blog {
     line-height: 1.3;
 }
 
+/* Strong text inside blog paragraphs */
 .blog-post p  strong {
     display: block;
     margin-bottom: 1rem;
@@ -197,6 +219,7 @@ section.blog {
     color: #888;
 }
 
+/* Blog post paragraphs with good spacing and readability */
 .blog-post p {
     font-size: 1.1rem;
     line-height: 1.8;
@@ -204,17 +227,20 @@ section.blog {
     margin-bottom: 1.5rem;
 }
 
+/* Subheadings inside blog posts */
 .blog-post h3 {
   font-size: 1.4rem;
   margin-top: 2rem;
   color: #005a9c;
 }
 
+/* Lists with margin and padding for proper display */
 .blog-post ul {
   margin: 1rem 0 1.5rem 1.5rem;
   padding-left: 1rem;
 }
 
+/* List items with custom icon and color */
 .blog-post ul li {
   font-size: 1.1rem;
   line-height: 1.6;
@@ -223,6 +249,7 @@ section.blog {
   color: #444;
 }
 
+/* Responsive styles for blog on mobile */
 @media (max-width: 768px) {
   .blog .container {
     padding: 1.5rem;
@@ -242,35 +269,37 @@ section.blog {
   }
 }
 
-/* Events Sections */
+/* Events Section */
+/* White background, padding, centered text */
 .eventos {
   background-color: #ffffff;
   padding: 4rem 1rem;
   text-align: center;
 }
 
-
+/* Main title in events section */
 .eventos h2 {
   font-size: 2.2rem;
   margin-bottom: 1rem;
   color: #1a1a1a;
 }
 
-
+/* Introductory paragraph in events */
 .eventos .intro {
   font-size: 1.1rem;
   color: #555;
   margin-bottom: 2.5rem;
 }
 
-
+/* Grid layout for event items with responsive columns */
 .eventos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
-
+/* Individual event card styles */
+/* Light blue background, padding, rounded corners, subtle shadow, hover effect */
 .evento {
   background-color: #f5faff;
   padding: 1.8rem;
@@ -284,21 +313,22 @@ section.blog {
   transform: translateY(-5px);
 }
 
+/* Event title styles */
 .evento h3 {
   font-size: 1.3rem;
   color: #0078d7;
   margin-bottom: 0.75rem;
 }
 
-
+/* Event description paragraph */
 .evento p {
   font-size: 1rem;
   color: #333;
   margin-bottom: 0.4rem;
 }
 
-
-/* Footer  */
+/* Footer */
+/* Dark background, white text, padding and centered text */
 footer {
   background-color: #1a1a1a;       
   color: #ffffff;                  
@@ -307,13 +337,14 @@ footer {
   font-size: 0.95rem;
 }
 
-
+/* Footer container to limit width and center */
 footer .container {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-
+/* Footer links style */
+/* Light blue color, no underline, transition on hover */
 footer a {
   color: #00c3ff;
   text-decoration: none;
@@ -325,7 +356,7 @@ footer a:hover {
   color: #ffffff;
 }
 
-
+/* Horizontal divider in footer */
 footer hr {
   border: 0;
   height: 1px;
@@ -334,7 +365,7 @@ footer hr {
   width: 80%;
 }
 
-
+/* Footer credits style */
 footer .credits {
   margin-top: 1rem;
   color: #bbbbbb;
