@@ -194,35 +194,35 @@ section.blog {
   }
 }
 
-/* Sección de eventos */
+/* Events Sections */
 .eventos {
   background-color: #ffffff;
   padding: 4rem 1rem;
   text-align: center;
 }
 
-/* Título de la sección */
+
 .eventos h2 {
   font-size: 2.2rem;
   margin-bottom: 1rem;
   color: #1a1a1a;
 }
 
-/* Intro */
+
 .eventos .intro {
   font-size: 1.1rem;
   color: #555;
   margin-bottom: 2.5rem;
 }
 
-/* Grid de eventos */
+
 .eventos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
-/* Caja de evento */
+
 .evento {
   background-color: #f5faff;
   padding: 1.8rem;
@@ -236,14 +236,13 @@ section.blog {
   transform: translateY(-5px);
 }
 
-/* Título del evento */
 .evento h3 {
   font-size: 1.3rem;
   color: #0078d7;
   margin-bottom: 0.75rem;
 }
 
-/* Detalles del evento */
+
 .evento p {
   font-size: 1rem;
   color: #333;
